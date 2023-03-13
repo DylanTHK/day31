@@ -9,9 +9,11 @@
 <br><br><br><br><br><br>
 <!-- PRACTICE 2 -->
 <h2>Example 2: practice passing values between components</h2>
-<app-count></app-count>
 <!-- Requires @Input() in count ts to set startNum attribute -->
 <app-count [startNum]=3 (valueChange)="newValue($event)"></app-count>
+<!-- top row's button controls both rows -->
+<!-- bottom row's button controls bottom ONLY -->
+<app-count [startNum]="num"></app-count>
 
 <br><br><br><br><br><br>
 <!-- PRACTICE 1 -->

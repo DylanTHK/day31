@@ -19,7 +19,7 @@ export class CountComponent {
   updatePic(inc: number) {
     // adjust value
     this.startNum += inc
-    this.valueChange.next(this.startNum)
+    this.valueChange.next(inc)
   }
 
 }

@@ -20,7 +20,7 @@ export class AppComponent {
   // Practice 2
   num = 10;
   newValue(val: number) {
-    this.num = val;
+    this.num += val;
     console.info("new value: " + this.num);
   }
 

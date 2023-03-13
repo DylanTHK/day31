@@ -5,9 +5,7 @@
 sudo npm install -g typescript
 sudo npm install -g @angular/cli
 ```
-
 ## Commands to start Angular Project
-
 1. create new angular project
     - ng new <app_name>
 2. add libraries (if necessary)
@@ -16,7 +14,6 @@ sudo npm install -g @angular/cli
     - ng generate component <components/component_name> --flat --skip-tests
 4. start angular server (add -o to open browser to localhost:4200)
     - ng serve
-
 <br>
 
 ## Angular vs Spring
@@ -42,11 +39,12 @@ ng generate component components/hello --flat --skip-tests OR ng g c components/
 - add hello.component.ts
 
 
-parent -> child
-- @Input()
+## Pass data from Child's Perspective
+## @Input() 
+- allows parent -> child (pass / overwrite data)
 
-child -> parent
-- through events (event binding)
+## @Output() 
+- pass data from child -> parent through events (event binding)
 
 
 
