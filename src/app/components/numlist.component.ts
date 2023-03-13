@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { PicNum } from '../models';
 
 @Component({
@@ -8,12 +8,13 @@ import { PicNum } from '../models';
 })
 export class NumlistComponent {
   
-  numImages: PicNum[] =
-  [
-    { num: 1, text: "ONE"},
-    { num: 2, text: "TWO"},
-    { num: 3, text: "THREE"},
-    { num: 4, text: "FOUR"},
-    { num: 5, text: "FIVE"},
-  ]
+  @Input()
+  numImages: PicNum[] = []
+  // [
+  //   { num: 1, text: "ONE"},
+  //   { num: 2, text: "TWO"},
+  //   { num: 3, text: "THREE"},
+  //   { num: 4, text: "FOUR"},
+  //   { num: 5, text: "FIVE"},
+  // ]
 }

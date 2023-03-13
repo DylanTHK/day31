@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PicNum } from './models';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   
   // Practice 3
+  pics: PicNum[] = [
+    { num: 8, text: "HUAT AH!" },
+    { num: 8, text: "HUAT AH!" },
+    { num: 8, text: "HUAT AH!" },
+    { num: 8, text: "HUAT AH!" },
+    { num: 8, text: "HUAT AH!" },
+  ]
 
   // Practice 2
   num = 10;

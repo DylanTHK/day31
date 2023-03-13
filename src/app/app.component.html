@@ -2,10 +2,13 @@
 <!-- PRACTICE 3 -->
 <h1>Example 3: List of Numbers</h1>
 <app-numlist></app-numlist>
+<!-- obtain pics from app Component (root)-->
+<!-- assign pics to numImages attribute with @Input() at numlist component -->
+<app-numlist [numImages]="pics"></app-numlist>
 
 <br><br><br><br><br><br>
 <!-- PRACTICE 2 -->
-<h2>Example 2: practice passing values betwee</h2>
+<h2>Example 2: practice passing values between components</h2>
 <app-count></app-count>
 <!-- Requires @Input() in count ts to set startNum attribute -->
 <app-count [startNum]=3 (valueChange)="newValue($event)"></app-count>
