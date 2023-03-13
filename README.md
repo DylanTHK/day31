@@ -1,11 +1,56 @@
 # Day31Angular
 
+## Installation guides
+```
+sudo npm install -g typescript
+sudo npm install -g @angular/cli
+```
+
+## Commands to start Angular Project
+
+1. create new angular project
+    - ng new <app_name>
+2. add libraries (if necessary)
+    - npm install --save <module_name>
+3. Generate new component (inside components folder)
+    - ng generate component <components/component_name> --flat --skip-tests
+4. start angular server (add -o to open browser to localhost:4200)
+    - ng serve
+
+<br>
+
+## Angular vs Spring
+```
 package.json -> pom.xml
 tsconfig: to control how ts is transpiled to javascript code
 
 main working directory: src
 assets: static directory in SpringBoot
 main.ts: avoid (for now)
+```
+
+global files
+1. index.html
+2. styles.css (global css)
+3. main.ts
+
+creating component
+ng generate component components/hello --flat --skip-tests OR ng g c components/hello --flat --skip-tests
+- creates a folder: components
+- add hello.component.css
+- add hello.component.html
+- add hello.component.ts
+
+
+parent -> child
+- @Input()
+
+child -> parent
+- through events (event binding)
+
+
+
+** eventnames should be meaningful to your app's functions
 
 ```
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.

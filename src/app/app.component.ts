@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'day31Angular';
+  
+  // Practice 3
+
+  // Practice 2
+  num = 10;
+  newValue(val: number) {
+    this.num = val;
+    console.info("new value: " + this.num);
+  }
+
+  // Practice 1
+  title = 'Day31 Angular Practice';
+  disabled = true;
+  textColour = "blue";
+  toggleInput() {
+    console.info("button clicked")
+    this.disabled = !this.disabled;
+  }
 }

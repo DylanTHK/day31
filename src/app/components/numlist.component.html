@@ -1,0 +1,11 @@
+<div *ngIf="numImages.length <= 0">
+    No numbers in List
+</div>
+
+<div *ngIf="numImages.length > 0">
+
+    <div *ngFor="let numImg of numImages; let i = index;">
+        <img class="picture" src="/assets/numbers/number{{numImg.num}}.jpg">
+        <p>{{numImg.text}}</p>
+    </div>
+</div>
