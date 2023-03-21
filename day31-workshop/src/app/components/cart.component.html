@@ -1,0 +1,17 @@
+<h1>My Cart</h1>
+<table>
+    <tr *ngFor="let c of cart; let idx=index">
+        <td>
+            <img src="./assets/{{ c.image }}">
+        </td>
+        <td>
+            <p>{{ c.desc }}</p>
+        </td>
+        <td>
+            <p>quantity: {{ c.qty }}</p>
+        </td>
+        <td>
+            <button>X</button>
+        </td>
+    </tr>
+</table>
