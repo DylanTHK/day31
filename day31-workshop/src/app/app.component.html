@@ -15,4 +15,5 @@
 
 <app-cart
   [cart]="myCart"
-></app-cart>
+  (updateCart)="deleteItem($event)"
+  ></app-cart>

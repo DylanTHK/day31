@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
+import { Subject } from 'rxjs';
 import { ItemOrder } from '../model';
 
 @Component({
@@ -11,5 +12,11 @@ export class CartComponent {
   @Input()
   cart?: ItemOrder[];
 
+  @Output()
+  updateCart = new Subject<number>();
+
+  deleteItemFromCart(idx: number) {
+    this.updateCart.next(idx);
+  }
 
 }

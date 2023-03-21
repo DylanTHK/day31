@@ -41,7 +41,12 @@ export class AppComponent {
     console.info(">>>> Checking Cart")
     // FIXME: change inventory to myCart
     return this.myCart.find(item => item.desc === desc);
-     
+  }
+
+  //TODO: How to pass index of  
+  deleteItem(idx: number) {
+    console.info("deleting item by index in Cart");
+    this.myCart.splice(idx, 1);
   }
 
 }

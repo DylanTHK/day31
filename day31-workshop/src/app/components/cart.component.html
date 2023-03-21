@@ -11,7 +11,7 @@
             <p>quantity: {{ c.qty }}</p>
         </td>
         <td>
-            <button>X</button>
+            <button type="button" (click)="deleteItemFromCart(idx)">X</button>
         </td>
     </tr>
 </table>
