@@ -45,6 +45,7 @@ ng generate component components/hello --flat --skip-tests OR ng g c components/
 
 ## @Output() 
 - pass data from child -> parent through events (event binding)
+- eg updated number value
 
 
 
