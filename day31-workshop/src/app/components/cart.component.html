@@ -1,17 +1,28 @@
 <h1>My Cart</h1>
 <table>
-    <tr *ngFor="let c of cart; let idx=index">
-        <td>
-            <img src="./assets/{{ c.image }}">
-        </td>
-        <td>
-            <p>{{ c.desc }}</p>
-        </td>
-        <td>
-            <p>quantity: {{ c.qty }}</p>
-        </td>
-        <td>
-            <button type="button" (click)="deleteItemFromCart(idx)">X</button>
-        </td>
-    </tr>
+    <div *ngIf="cart!.length <= 0">
+        <p>Your cart is empty</p>
+    </div>
+    <div *ngIf="cart!.length > 0">
+        <thead>
+            <th>Item</th>
+            <th>Description</th>
+            <th>Qty</th>
+            <th></th>
+        </thead>
+        <tr *ngFor="let c of cart; let idx=index">
+            <td>
+                <img src="./assets/{{ c.image }}">
+            </td>
+            <td>
+                <p>{{ c.desc }}</p>
+            </td>
+            <td>
+                <p>{{ c.qty }}</p>
+            </td>
+            <td>
+                <button type="button" (click)="deleteItemFromCart(idx)">X</button>
+            </td>
+        </tr>
+    </div>
 </table>
